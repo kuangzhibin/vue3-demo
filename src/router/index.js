@@ -8,25 +8,48 @@ export default new Router({
   routes: [
     {
       path: "/",
-      name: "welcome",
-      component: () => import("views/Welcome.vue"),
-      meta: { isFullScreen: true }
+      component: () => import("components/layout/FullScreen.vue"),
+      children: [
+        {
+          path: "/",
+          name: "welcome",
+          component: () => import("views/Welcome.vue")
+        }
+      ]
     },
     {
       path: "/home",
-      name: "home",
-      component: () => import("views/Home.vue")
+      component: () => import("components/layout/"),
+      children: [
+        {
+          path: "/",
+          name: "home",
+          component: () => import("views/Home.vue")
+        }
+      ]
     },
     {
       path: "/about",
-      name: "about",
-      component: () => import("views/About.vue")
+      component: () => import("components/layout/"),
+      children: [
+        {
+          path: "/",
+          name: "about",
+          component: () => import("views/About.vue")
+        }
+      ]
     },
     {
       path: "*",
       name: "404",
-      component: () => import("views/404.vue"),
-      meta: { isFull: true }
+      component: () => import("components/layout/FullScreen.vue"),
+      children: [
+        {
+          path: "/",
+          name: "404",
+          component: () => import("views/404.vue")
+        }
+      ]
     }
   ]
 });

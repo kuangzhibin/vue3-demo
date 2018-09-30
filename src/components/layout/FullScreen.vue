@@ -1,32 +1,22 @@
 <template>
   <div class="warpper">
     <Header></Header>
-    <div>
-      <Aside></Aside>
-      <Container>
-        <router-view></router-view>
-      </Container>
-    </div>
+    <Container :style="{left: '0'}">
+      <router-view></router-view>
+    </Container>
   </div>
 </template>
 
 <script>
 import Header from "@/components/layout/Header.vue";
-import Aside from "@/components/layout/Aside.vue";
 import Container from "@/components/layout/Container.vue";
 export default {
   components: {
     Header,
-    Aside,
     Container
   },
   data() {
     return {};
-  },
-  computed: {
-    isFullScreen() {
-      return this.$route.meta.isFullScreen;
-    }
   },
   methods: {}
 };
