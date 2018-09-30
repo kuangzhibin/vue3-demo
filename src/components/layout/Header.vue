@@ -23,7 +23,7 @@
 export default {
   data() {
     return {
-      logo: require("assets/images/report_logo.png"),
+      logo: require("@images/report_logo.png"),
       navList: [
         { path: "/home", name: "行政" },
         { path: "/about", name: "市场" },
