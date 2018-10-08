@@ -10,7 +10,8 @@
       "@views/*": ["src/views/*"],
       "@utils/*": ["src/utils/*"],
       "@api/*": ["src/api/*"],
-      "@images/*": ["src/assets/images/*"]
+      "@images/*": ["src/assets/images/*"],
+      "@styles/*": ["src/assets/styles/*"]
     }
   },
   "exclude": ["node_modules", "dist"],

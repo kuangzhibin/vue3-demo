@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Header from "@/components/layout/Header.vue";
-import Container from "@/components/layout/Container.vue";
+import { Header, Container } from "./components/";
+
 export default {
   components: {
     Header,

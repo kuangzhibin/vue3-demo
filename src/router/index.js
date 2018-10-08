@@ -1,8 +1,8 @@
 import Vue from "vue";
 import Router from "vue-router";
 
-const FullScreen = () => import("@/components/layout/FullScreen.vue");
-const Layout = () => import("@/components/layout/");
+const FullScreen = () => import("@/views/layout/FullScreen.vue");
+const Layout = () => import("@/views/layout/WithSide.vue");
 
 Vue.use(Router);
 
@@ -44,7 +44,6 @@ export default new Router({
     },
     {
       path: "*",
-      name: "404",
       component: FullScreen,
       children: [
         {

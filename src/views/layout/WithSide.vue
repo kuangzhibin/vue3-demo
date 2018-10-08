@@ -4,16 +4,16 @@
     <div>
       <Aside></Aside>
       <Container>
-        <router-view></router-view>
+        <transition name="el-fade-in-linear" mode="out-in">
+          <router-view></router-view>
+        </transition>
       </Container>
     </div>
   </div>
 </template>
 
 <script>
-import Header from "@/components/layout/Header.vue";
-import Aside from "@/components/layout/Aside.vue";
-import Container from "@/components/layout/Container.vue";
+import { Header, Aside, Container } from "./components/";
 export default {
   components: {
     Header,

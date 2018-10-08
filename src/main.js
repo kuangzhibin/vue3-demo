@@ -4,6 +4,9 @@ import router from "./router/";
 import store from "./store/";
 import "normalize.css";
 import "./plugins/element.js";
+
+import "@/styles/index.scss"; // global css
+
 import PageLink from "@/components/PageLink";
 
 Vue.config.productionTip = false;

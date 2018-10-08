@@ -9,7 +9,8 @@ module.exports = {
         "@utils": "@/utils",
         "@api": "@/api",
         "@assets": "@/assets",
-        "@images": "@/assets/images"
+        "@images": "@/assets/images",
+        "@styles": "@/assets/styles"
       }
     }
   },
